@@ -6,7 +6,7 @@ We are given a binary string $s$ of length $n$, where $s_i = 1$ indicates that t
 
 We want to calculate the minimum number of additional students that can be seated. Since no two students can sit adjacent to each other, if $s_i = 1$, then neither $s_{i-1}$ nor $s_{i+1}$ can be occupied. Therefore, we need to count the contiguous segments of available seats ($0$s) while excluding those adjacent to an already occupied seat ($1$).
 
-To determine which $0$s can actually be occupied, I used a boolean vector. If a position cannot be occupied, we mark it as false.
+To determine which $0$'s can actually be occupied, I used a boolean vector. If a position cannot be occupied, we mark it as false.
 
 ```cpp
 vector<bool> v;
